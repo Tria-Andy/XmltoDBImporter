@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "xmlparser.h"
+#include <QStandardItemModel>
 
 namespace Ui {
 class MainWindow;
@@ -18,8 +20,13 @@ public:
 private slots:
     void on_actionExit_triggered();
 
+    void on_comboBox_xml_activated(int index);
+
 private:
     Ui::MainWindow *ui;
+    xmlParser *parser;
+    QMap<int,QString> xmlTags;
+    QStandardItemModel *xmlmodel,*modelptr;
 };
 
 #endif // MAINWINDOW_H

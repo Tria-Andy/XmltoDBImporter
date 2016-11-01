@@ -71,7 +71,7 @@
            </widget>
           </item>
           <item row="0" column="1">
-           <widget class="QComboBox" name="comboBox"/>
+           <widget class="QComboBox" name="comboBox_xml"/>
           </item>
           <item row="2" column="0">
            <widget class="QLabel" name="label_2">
@@ -81,7 +81,7 @@
            </widget>
           </item>
           <item row="2" column="1">
-           <widget class="QComboBox" name="comboBox_2"/>
+           <widget class="QComboBox" name="comboBox_table"/>
           </item>
           <item row="4" column="1">
            <widget class="QPushButton" name="pushButton">
@@ -136,6 +136,14 @@
       <property name="frameShadow">
        <enum>QFrame::Raised</enum>
       </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QTableView" name="tableView_xml"/>
+       </item>
+       <item>
+        <widget class="QTableView" name="tableView_db"/>
+       </item>
+      </layout>
      </widget>
     </item>
    </layout>
